@@ -70,11 +70,12 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should destroy post" do
     sign_in users(:user1)
+    cat=@post.category
     assert_difference('Post.count', -1) do
       delete post_url(@post)
     end
 
-    assert_redirected_to posts_url
+    assert_redirected_to category_url(category)
   end
 
   test "should not destroy post" do

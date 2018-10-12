@@ -6,6 +6,10 @@ Requirements
 * Ruby 2.5.1
 * Rails 5.2.1
 
+Clone the code with
+
+git clone https://github.com/fairanswers/joes_list
+
 Gems we'll need (in addition to the defaults)
 
 * devise - authentication
@@ -15,6 +19,7 @@ After you clone the code, cd joes_list and run
 1. bundle install
 2. rails db:migrate
 3. rails db:seed
+4. rails server
 
 This will give you a nice list of categories to get started with.  
 
